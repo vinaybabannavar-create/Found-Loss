@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="A product of emergent.sh" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <title>FOUND & LOSS APP</title>
+
+    <!-- Optional: remove or keep these only if you need rrweb/posthog for analytics -->
+    <script src="https://unpkg.com/rrweb@latest/dist/rrweb.min.js"></script>
+    <script src="https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js"></script>
+  </head>
+
+  <body>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div id="root"></div>
+
+    <!-- React scripts will be injected here by the build process -->
+    <!-- Do not manually add JS imports below unless absolutely necessary -->
+
+    <!-- Optional PostHog analytics (commented out unless needed)-->
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            (p = t.createElement("script")).type = "text/javascript";
+            p.crossOrigin = "anonymous";
+            p.async = !0;
+            p.src =
+              s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+              "/static/array.js";
+            (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+            var u = e;
+            void 0 !== a ? (u = e[a] = []) : (a = "posthog");
+            u.people = u.people || [];
+            u.toString = function (t) {
+              var e = "posthog";
+              return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e;
+            };
+            u.people.toString = function () {
+              return u.toString(1) + ".people (stub)";
+            };
+            o =
+              "init capture identify alias set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(
+                " "
+              );
+            for (n = 0; n < o.length; n++) g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
+        api_host: "https://us.i.posthog.com",
+        person_profiles: "identified_only",
+      });
+    </script>
+  </body>
+</html>

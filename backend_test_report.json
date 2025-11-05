@@ -1,0 +1,130 @@
+{
+  "summary": {
+    "total_tests": 17,
+    "passed_tests": 1,
+    "failed_tests": 16,
+    "success_rate": 5.88235294117647
+  },
+  "results": [
+    {
+      "test": "Health Check",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:27.055068"
+    },
+    {
+      "test": "Root Endpoint",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:27.838983"
+    },
+    {
+      "test": "User Registration",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:28.715245"
+    },
+    {
+      "test": "User Login",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:29.804334"
+    },
+    {
+      "test": "Get Current User",
+      "success": false,
+      "details": "",
+      "error": "No authentication token available",
+      "timestamp": "2025-10-07T11:13:29.809931"
+    },
+    {
+      "test": "Create Found Item",
+      "success": false,
+      "details": "",
+      "error": "No authentication token available",
+      "timestamp": "2025-10-07T11:13:29.810687"
+    },
+    {
+      "test": "Create Lost Item",
+      "success": false,
+      "details": "",
+      "error": "No authentication token available",
+      "timestamp": "2025-10-07T11:13:29.811459"
+    },
+    {
+      "test": "Get All Items",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:30.717408"
+    },
+    {
+      "test": "Get Found Items",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:31.455710"
+    },
+    {
+      "test": "Get Lost Items",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:32.198255"
+    },
+    {
+      "test": "Get Items by Category",
+      "success": false,
+      "details": "Expected 200, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:32.958773"
+    },
+    {
+      "test": "Get Specific Item",
+      "success": false,
+      "details": "",
+      "error": "No items created to test with",
+      "timestamp": "2025-10-07T11:13:32.963768"
+    },
+    {
+      "test": "Get My Items",
+      "success": false,
+      "details": "",
+      "error": "No authentication token available",
+      "timestamp": "2025-10-07T11:13:32.964418"
+    },
+    {
+      "test": "Contact Owner",
+      "success": false,
+      "details": "",
+      "error": "No items created to test with",
+      "timestamp": "2025-10-07T11:13:32.965060"
+    },
+    {
+      "test": "Update Item Status",
+      "success": false,
+      "details": "",
+      "error": "No authentication token or items available",
+      "timestamp": "2025-10-07T11:13:32.965707"
+    },
+    {
+      "test": "Get Non-existent Item",
+      "success": true,
+      "details": "Status: 404 (No JSON response)",
+      "error": "",
+      "timestamp": "2025-10-07T11:13:33.694458"
+    },
+    {
+      "test": "Unauthorized Access to My Items",
+      "success": false,
+      "details": "Expected 401, got 404",
+      "error": "HTTP 404",
+      "timestamp": "2025-10-07T11:13:34.451087"
+    }
+  ],
+  "created_items": []
+}
